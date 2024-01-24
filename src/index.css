@@ -1,0 +1,133 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 14px 2px rgba(66, 68, 90, 0.14);
+  -moz-box-shadow: 1px 2px 14px 2px rgba(66, 68, 90, 0.185);
+  box-shadow: 1px 2px 14px 2px rgba(100, 108, 255, 0.151);
+}
+
+.box__num-list {
+  display: flex;
+  flex-basis: 40%;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.box__inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.box__inputs label{
+  font-weight: 600;
+  margin-bottom: .2rem;
+}
+
+.box__inputs__input {
+  padding: .5rem;
+  border: 1px solid rgba(0, 0, 0, 0.432);
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.box__inputs input:last-child {
+  cursor: not-allowed;
+}
+
+.box__button {
+  color: white;
+  border-color: #646cff;
+  background-color: #646cff;
+  transition: .3s;
+}
+
+.box__button:hover {
+  border-color: #5a61db;
+  background-color: #5a61db;
+}
+
+.box__num-list__button--active {
+  background-color: #5a61db;
+  color: white;
+}
